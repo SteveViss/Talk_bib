@@ -1,45 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-    <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
 
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-    </style>
-  </head>
-  <body>
-    <textarea id="source">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-class: center, middle
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 
-# Title
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+  @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,300,300italic,500,500italic,700,700italic);
+
+  body {
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+  }
+  h1, h2, h3 {
+    font-family: 'Ubuntu';
+    font-weight: medium;
+  }
+  .inverse {
+    background: #272822;
+    color: #777872;
+    text-shadow: 0 0 20px #333;
+  }
+  .inverse h1, .inverse h2 {
+    color: #f3f3f3;
+    line-height: 1em;
+  }
+  /* Slide-specific styling */
+  #slide-inverse .footnote {
+    bottom: 12px;
+    left: 20px;
+  }
+.remark-slide-content h1 { font-size: 2em; }
+.remark-slide-content h2 { font-size: 1.8em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+  bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.large { font-size: 2em; }
+a, a > code {
+  color: rgb(203, 6, 0);
+  text-decoration: none;
+}
+  .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+}
+  </style>
+</head>
+<body>
+  <textarea id="source">
+
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+  # Introduction aux systèmes bibliographiques
+  [Nicolas Casajus, Steve Vissault & Kevin Cazelles]
+
+  .footnote[En ligne sur [Github](https://github.com/SteveViss/Talk_bib/)]
+
+  <img src="bib.jpg" style="width:500px"></img>
 
 ---
-
-# Agenda
-
-1. Introduction
-2. Deep-dive
-3. ...
-
+layout: true
+class: center, middle, inverse
 ---
 
-# Introduction
+## Qu'est ce qu'une référence bibliographique?
 
-    </textarea>
-    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
-    </script>
-    <script>
-      var slideshow = remark.create();
-    </script>
-  </body>
+---
+layout: false
+class: middle
+
+## Définition
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+
+## Qu'est ce qu'un DOI?
+
+---
+layout: false
+class: middle
+
+## Définition
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+
+## Stocker vos références:
+
+### Quels outils ?
+
+---
+layout: false
+class: center
+
+## Trois options
+
+<div class="row vertical-align" style ="margin-top:60px;margin-bottom:30px;">
+  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="logo_endnote.jpg" style="width:140px;"></img></div>
+  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="logo_mendeley.png" style="width:100px;"></img></div>
+  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="logo_zotero.png" style="width:120px;"></img></div>
+</div>
+
+<div class="row">
+  <div class="col-md-4" style="font-size:14px;">
+    <ul class="list-group">
+      <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire</li>
+      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Gratuit à la bibliothèque</li>
+      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Office & LibreOffice</li>
+      <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Mac OSX & Windows</li>
+      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
+      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Stockage illimité</li>
+    </ul>
+  </div>
+  <div class="col-md-4" style="font-size:14px;">
+  <ul class="list-group">
+    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire Elsevier</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise en charge LateX</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise de notes sur PDF</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Groupe utilisateurs / Partage d'articles</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (1 Go)</li>
+  </ul>
+</div>
+  <div class="col-md-4" style="font-size:14px;">
+    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel Libre</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
+    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (100 Mo)</li>
+  </div>
+</div>
+
+<span style="text-align:right;font-size:14px;font-weight:bold;">.footnote[[Source](https://www.libraries.psu.edu/psul/lls/choose_citation_mgr.html)]</span>
+
+
+
+  </textarea>
+  <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+  </script>
+  <script>
+  var slideshow = remark.create();
+  </script>
+</body>
 </html>
