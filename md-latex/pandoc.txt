@@ -1,0 +1,8 @@
+pandoc -o md-citations.pdf md-citations.tex --bibliography=md-citations.bib --csl gcb.csl
+pandoc -o md-citations.pdf md-citations.md --bibliography=md-citations.bib --csl gcb.csl
+
+
+pdflatex md-citations.tex
+bibtex md-citations.bib
+pdflatex md-citations.tex
+pdflatex md-citations.tex
