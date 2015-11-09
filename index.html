@@ -73,30 +73,135 @@ class: center, middle, inverse
 
   .footnote[En ligne sur [Github](https://github.com/SteveViss/Talk_bib/)]
 
-  <img src="bib.jpg" style="width:500px"></img>
+  <img src="./images/bib.jpg" style="width:500px"></img>
 
 ???
 
 ## Introduction aux systèmes bibliographiques
 
 
+---
 
+# Une référence c'est quoi ?
+
+### 1. Pour communiquer
+### 2. Pour situer notre travail
+### 3. Argumenter
+
+???
+mes notes
+
+---
+
+# Une référence, c'est quoi
+
+
+1. Un ensemble d'information relatif à une source d'information
+
+--
+
+2. Un appuie à notre argumentaire
+
+--
+
+3. Une référence historique sur ce qu'il existe
+
+--
+
+4. Des règles typographiques
+
+---
+
+# Une référence, c'est quoi
+
+1. Nature
+2. Author
+3. Où c'est publié
+4. (personnel communication)
+5. Date
+
+---
+
+
+# Mécanismes d'identification des ressources
+
+1. DOI
+2. ISBN
+3. ISSN
+4. ArXid
+5. PMID
+
+---
+
+
+# Qualité / règle typographiques
 
 
 ---
-layout: true
-class: center, middle, inverse
+
+
+# Digital Object Identifier (DOI)
+
+- identifier des resources numéritiques:
+  1. film
+  2. code ([Zenodo](https://zenodo.org/about))
+- Normailsé depuis 2012 norme ISO 26324
+- [Article en ligne BBF (1998)](http://bbf.enssib.fr/consulter/bbf-1998-03-0049-007)
+- [Article INIST](http://www.inist.fr/?Attribution-de-DOI)
+-[data Cite](https://www.datacite.org/node)
 ---
 
-## Qu'est ce qu'une référence bibliographique?
+# DOI
+
+1. [doi.org](http://www.doi.org)
+2. exemple : 10.3410/f.718255373.793490237
+3. 10.1111/j.1461-0248.2004.00608.x
+4. 10.1111/j.1461-0248.2011.01588.x
+5. Will a Large Complex System be Stable?
+6. [crossref](http://crossref.org)
+
 
 ---
-layout: false
-class: middle
 
-## Définition
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# International Standard Book Number (ISBN)
+
+- [ISBN Search](http://www.isbnsearch.org)
+- Avec le code barre
+- A User’s Guide to Network Analysis in RISBN 978-3-319-23882-1
+- 978-3-319-24044-2
+- ISBN 13 depuis 2007 (10 avant)
+- Normalisé version 1, 1972
+
+---
+
+
+# International Standard Serial Number (ISSN)
+
+- Pour les publications en série : journaux, revues collection
+- Normalisé version 1, 1975
+- 2*4 chiffres, dernier chiffre = clef de vérification
+- Exemples :
+
+![:scale 80%](./images/science.jpg)
+
+![:scale 80%](./images/ecolet.jpg)
+
+
+---
+
+
+# Others
+
+- [PMID/PMICID]()
+- [ArXid](http://arxiv.org)
+
+
+
+
+
+
+
 
 ---
 name: inverse
@@ -131,9 +236,9 @@ class: center
 ## Trois options
 
 <div class="row vertical-align" style ="margin-top:60px;margin-bottom:30px;">
-  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="logo_endnote.jpg" style="width:140px;"></img></div>
-  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="logo_mendeley.png" style="width:100px;"></img></div>
-  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="logo_zotero.png" style="width:120px;"></img></div>
+  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="./images/logo_endnote.jpg" style="width:140px;"></img></div>
+  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="./images/logo_mendeley.png" style="width:100px;"></img></div>
+  <div class="col-md-4" style="vertical-align:middle;display:inline-block;"><img src="./images/logo_zotero.png" style="width:120px;"></img></div>
 </div>
 
 <div class="row">
@@ -197,6 +302,11 @@ class: center, middle, inverse
   <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
   </script>
   <script>
+  // Macros
+  remark.macros.scale = function (percentage) {
+    var url = this;
+    return '<img src="' + url + '" style="width: ' + percentage + '" />';
+  };
   var slideshow = remark.create();
   </script>
 </body>
