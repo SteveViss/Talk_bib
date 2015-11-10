@@ -1,4 +1,4 @@
-# Systèmes bibliographiques pour paresseux
+# Gérer et formatter sa bibliographie
 
 Quand nous écrivons une publication scientifique, nous présentons nos idées et résultats à travers un argumentaire appuyé par des références à des travaux plus anciens. Avec l'avènement de l'ère numérique, les publications scientifiques s'accumulent rapidement à travers le temps. Il est donc primordial d'organiser ces documents aussi bien à l'échelle individuelle, sur notre ordinateur, qu'à l'échelle collective, sur des serveurs dédiés à l'archivage numérique. Chaque document numérique est aujourd'hui identifiable de manière unique (Digital Object identifier) et associer à des metadonnées (date de production, auteurs, ...).  Ces identifiants permettent d'obtenir l'ensemble des informations que nous avons besoins pour batîr notre bibliographie.
 
