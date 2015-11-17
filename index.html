@@ -471,16 +471,137 @@ class: center, middle, inverse
 
 <hr />
 
-### Markdown, LaTeX et pandoc
+### LaTeX, Markdown et Pandoc
 
 ---
 layout: false
 
-## Markdown, LaTeX et pandoc: quésako?
+## LaTeX, Markdown et Pandoc: quésako?
+<hr />
+<br />
+
+![:scale 15%](./images/logo_latex.png)
+--
+
+<br /><br />
+
+- Langage de description de document
+- Appartient à la famille des langages à balises
+<br /><br />
+        \textit{Ce texte sera écrit en italique}
+<br />
+--
+
+- L'utilisateur ne s'intéresse qu'au contenu du document
+- Le typographe virtuel s'occupe de la mise en page
+- Le document compilé produit un PDF ou un PostScript
+--
+
+- Pour insérer une citation, on écrira :
+<br /><br />
+        \cite{Gravel2014}
+<br />
+
+
+
+---
+layout: false
+
+## LaTeX, Markdown et Pandoc: quésako?
+<hr />
+<br />
+
+![:scale 15%](./images/logo_markdown.png)
+--
+
+<br /><br />
+
+- Langage à balises **léger**
+<br /><br />
+        _Ce texte sera écrit en italique_
+<br />
+--
+
+- Version allégée de LaTeX
+- Le principe est le même que pour LaTeX
+--
+
+- Pour insérer une citation, on écrira :
+<br /><br />
+        @Gravel2014
+<br />
+
+
+
+---
+layout: false
+
+## LaTeX, Markdown et Pandoc: quésako?
+<hr />
+<br />
+
+### Pandoc
+--
+
+<br />
+
+- Convertisseur de formats de documents
+- Plusieurs dizaines de formats pris en compte
+- Markdown, LaTeX, HTML, Word, Writer, ePUB, PDF, JSON, XML, etc.
+--
+
+- Programme en lignes de commande
+<br /><br />
+        ### Création d'un PDF à partir d'un fichier LaTeX
+        pandoc -o output.pdf  input.tex
+
+        ### Création d'un PDF à partir d'un fichier Markdown
+        pandoc -o output.pdf  input.md
+
+        ### Création d'un DOCX à partir d'un fichier LaTeX
+        pandoc -o output.docx input.tex
+---
+layout: false
+
+## Les fichiers de style bibliographique
+<hr />
+<br />
+
+### Fichier CSL
+<br />
+
+- Contient le formatage des différents items d'une référence bibliographique
+- Souvent associé à une revue
+- Informations reconnues par Zotero, Mendeley et Pandoc
+- Plusieurs centaines de style disponible sur [GitHub](https://github.com/citation-style-language/styles)
+
+--
+
+### Alternatives
+
+- Fichier .ens (EndNote)
+- Fichier .bst (LaTeX)
+
+---
+layout: false
+
+## Exemple en live
 <hr />
 <br />
 
 
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+
+## Extras
+
+<hr />
+
+### Gérer ses références avec R
 
   </textarea>
   <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
