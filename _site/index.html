@@ -79,7 +79,7 @@
 
     <hr />
 
-    Nicolas Casajus, Steve Vissault et Kévin Cazelles
+    Nicolas Casajus, Steve Vissault et Kevin Cazelles
 
     <br />
 
@@ -124,7 +124,7 @@
     --
 
     2. Une source d'information
-      > Résultats antérieurs, autres références
+      > Résultats antérieurs, d'autres références
     --
 
     3. Un appui à un argument
@@ -152,11 +152,11 @@
     --
 
     2. On les stocke
-      > Endnote, Mendeley, Zotero
+      > Endnote, Mendeley, Zoterro
     --
 
     3. On les cite
-      > Microsoft Word, LibreOffice, LaTeX, Markdown
+      > Word, LibreOffice, Latex, Markdown
     --
 
     4. On fait des statistiques dessus (bibliométrie)
@@ -192,11 +192,11 @@
     --
 
     - [Web of Science](https://apps.webofknowledge.com/)
-      > La base de donnée d'articles scientifiques
+      > La base de donnée d'artilce scientifique
     --
 
     - [Service bibliothèque](http://biblio.uqar.ca)
-      > Profitez-en !
+      > profitez-en
     --
 
     - [Les journaux](http://www.nature.com)
@@ -236,11 +236,11 @@
     --
 
     4. Où?
-      > Journal, éditions, collection, URL, etc.
+      > Journal, editions, collection, URL, etc.
     --
 
     6. Une identification unique
-      > Au-delà du recoupement d'informations
+      > Au-delà du recoupement d'information
 
     ???
     Jusqu'à la personnelle communication
@@ -283,23 +283,19 @@
     <br />
 
     - Pour les publications en série
-      > Journaux, revues, collections, etc.
+      > journaux, revues, collections, etc.
     --
 
     - Normalisé
-        > Norme ISO depuis 1975
+        > norme ISO depuis 1975
     - 2 x 4 chiffres
       > Dernier chiffre = [clé de vérification](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number)
     --
 
-    - Exemples :
+    - Exemples:
 
-    <br />
-
-    ```
           Science: ISSN 0036-8075 (print), 1095-9203 (online)
           Ecology Letters: ISSN 1461-0248 (online)
-    ```
     <!--![:scale 60%](./images/science.jpg)
     ![:scale 60%](./images/ecolet.jpg)-->
 
@@ -314,7 +310,7 @@
     <br />
 
     - Normalisé
-      > Norme ISO depuis 1972
+      > norme ISO depuis 1972
     - Composé de 13 chiffres (depuis 2007, 10 auparvant)
     --
 
@@ -342,7 +338,7 @@
     --
     <br /><br />
     - [ISBN Search](http://www.isbnsearch.org)
-      > À quel livre correspond **978-0-961-392-10** ?
+      > A quel livre correspond **978-0-961-392-10**?
 
     ???
     978-1-234-56789-7
@@ -357,7 +353,7 @@
     <hr />
     <br />
 
-    - Identifier des resources numériques
+    - Identifier des resources numériques:
       > Articles scientifiques
 
       > Jeux de données ([DataCite](https://www.datacite.org/node))
@@ -390,10 +386,11 @@
     <hr />
     <br />
 
-    - Accès rapide aux metadonnées
+    - Accès rapide aux métadonnées
+      >
     --
 
-    - À partir d'un titre
+    - À partir d'un titre :
 
       > Will a Large Complex System be Stable?
 
@@ -412,8 +409,8 @@
       > 10.1111/j.1461-0248.2011.01588.x
 
 
-    - Ne plus saisir les metadonnées à la main
-      > Grâce aux outils adéquats
+    - Ne plus entrer les métadonnées à la main
+      > Grâce aux outils adéquates
 
     ???
     Ca veut dire que si je peux aller chercher DOI en ligne, je peux avoir accès à toutes aux metadonnées
@@ -558,16 +555,14 @@
     - Contient la description d'une référence sous forme de mot-clé
     --
     <br /><br />
-    ```
     @article{arrow1961,
-    author={Arrow, Kenneth J. and Leonid Hurwicz and Hirofumi Uzawa},
-    title={Constraint qualifications in maximization problems},
-    journal={Naval Research Logistics Quarterly},
-    volume={8},
-    year=1961,
-    pages={175-191}
+      author={Arrow, Kenneth J. and Leonid Hurwicz and Hirofumi Uzawa},
+      title={Constraint qualifications in maximization problems},
+      journal={Naval Research Logistics Quarterly},
+      volume={8},
+      year=1961,
+      pages={175-191}
     }
-    ```
     <br />
     --
 
@@ -590,9 +585,7 @@
     - Langage de description de document
     - Appartient à la famille des langages à balises
     <br /><br />
-    ```
     \textit{Ce texte sera écrit en italique}
-    ```
     <br />
     --
 
@@ -603,10 +596,7 @@
 
     - Pour insérer une citation, on écrira :
     <br /><br />
-    ```
     \cite{Gravel2014}
-    \citep{Gravel2014}
-    ```
     <br />
 
 
@@ -625,9 +615,7 @@
 
     - Langage à balises **léger**
     <br /><br />
-    ```
     _Ce texte sera écrit en italique_
-    ```
     <br />
     --
 
@@ -637,10 +625,7 @@
 
     - Pour insérer une citation, on écrira :
     <br /><br />
-    ```
     @Gravel2014
-    [@Gravel2014]
-    ```
     <br />
 
 
@@ -664,8 +649,6 @@
 
     - Programme en lignes de commande
     <br /><br />
-
-    ```
     ### Création d'un PDF à partir d'un fichier LaTeX
     pandoc -o output.pdf  input.tex
 
@@ -674,8 +657,6 @@
 
     ### Création d'un DOCX à partir d'un fichier LaTeX
     pandoc -o output.docx input.tex
-    ```
-
     ---
     layout: false
 
@@ -693,9 +674,7 @@
 
     --
 
-    <br />
     ### Alternatives
-    <br />
 
     - Fichier .ens (EndNote)
     - Fichier .bst (LaTeX)
@@ -737,61 +716,8 @@
     - Connexion à l'API de CrossRef
     - Deux fonctions principales :
 
-    <br />
-
-    ```
-    ### Recherche d'articles par mot-clé
     > cr_search(query, rows, ...)
-
-    ### Extraction des citations en BibTeX
     > cr_cn(dois, format)
-    ```
-
-    ---
-    layout: false
-
-    ## Exemple en live
-    <hr />
-    <br />
-    --
-
-    - Lignes de code R :
-
-    <br />
-
-            # Installation du package
-            > install.packages('rcrossref')
-
-            # Choix du répertoire de travail
-            > setwd('~/Desktop/Talk_bib/exemple-r')
-
-            # Chargement des fonctions requises
-            > source('getCrossRef.R')
-            > source('initiales.R')
-
-            # Requête sur CrossRef
-            > getCrossRef(author = 'Cazelles, Kévin', year = NULL)
-    <br />
-
-
-
-    ---
-    layout: false
-
-    ## Exemple en live
-    <hr />
-    <br />
-
-    - Création d'un PDF avec les références (sans citation) dans le terminal
-
-    <br />
-
-            $ pandoc -o exemple2.pdf exemple2.tex \
-                     --bibliography=ref-cazelles.bib \
-                     --csl=nature.csl
-
-            $ open exemple2.pdf
-    <br />
 
 
 
