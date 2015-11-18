@@ -2,10 +2,9 @@
 
 pandoc -o exemple.pdf exemple.tex --bibliography=citations.bib --csl=ecology-letters.csl
 
-pandoc -o exemple.pdf exemple.md --bibliography=citations.bib --csl=gcb.csl
+pandoc -o exemple.pdf exemple.md --bibliography=citations.bib --csl=nature.csl
 
 
 # Exemple 2
 
-
-pandoc -o exemple2.pdf exemple2.md --bibliography=ref-cazelles-2.bib --csl=gcb.csl
+pandoc -o exemple2.pdf exemple2.tex --bibliography=ref-cazelles-2.bib --csl=nature.csl
