@@ -52,7 +52,7 @@
   .red { color: #fa0000; }
   .large { font-size: 2em; }
   a, a > code {
-    color: rgb(203, 6, 0);
+    color: #ff0000;
     text-decoration: none;
   }
   .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
@@ -88,6 +88,8 @@
     <br />
 
     .footnote[En ligne sur [Github](https://github.com/SteveViss/Talk_bib/)]
+
+    .footnote[Fait avec <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span> sur [Remark](http://remarkjs.com/#1)]
 
     ???
     pas de note
@@ -262,7 +264,7 @@
     --
 
     4. **ArXiv ID**
-      > Service de prépublication [en ligne](http://arxiv.org/pdf/1511.05154.pdf).
+      > Service de prépublication [en ligne](http://arxiv.org/pdf/1511.05154.pdf)
     --
 
     5. **PMID** (_PubMed IDentifier_)
@@ -315,7 +317,7 @@
 
     - Normalisé
       > Norme ISO depuis 1972
-    - Composé de 13 chiffres (depuis 2007, 10 auparvant)
+    - Composé de 13 chiffres (depuis 2007, 10 auparavant)
     --
 
     <br /><br />
@@ -436,44 +438,84 @@
 
     ## Trois alternatives principales
     <hr />
+    <!-- <span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span> -->
+    <table class="table table-striped" style="font-size:15px;">
+      <thead>
+        <tr>
+          <th></th>
+          <th><img src="./images/logo_endnote.jpg" style="height:45px;"></img></th>
+          <th><img src="./images/logo_mendeley.png" style="height:45px;"></img></th>
+          <th><img src="./images/logo_zotero.png" style="height:40px;"></img></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Création</th>
+          <td>2001</td>
+          <td>2007</td>
+          <td>2005</td>
+        </tr>
+        <tr>
+          <th>Propriétaire</th>
+          <td>Thomson Reuters, <b>Payant</b></td>
+          <td>Elsevier,<br> <b>Gratuit</b></td>
+          <td>Libre, OpenSource et <b>Gratuit</b></td>
+        </tr>
+        <tr>
+          <th>Stockage</th>
+          <td>Payant</td>
+          <td>Gratuit (2Gb)</td>
+          <td>Gratuit (300 Mo)</td>
+        </tr>
+        <tr>
+          <th>Multi-plateforme</th>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+        </tr>
+        <tr>
+          <th>Serveur distant</th>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:red;"></span></td>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+        </tr>
+        <tr>
+          <th>Visualisation et prise de note PDF</th>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:red;"></span></td>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:red;"></span></td>
+        </tr>
+        <tr>
+          <th>Recherche plein texte</th>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+          <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green;"></span></td>
+          <td><span class="glyphicon glyphicon-remove" aria-hidden="true" style="color:red;"></span></td>
+        </tr>
+        <tr>
+          <th>Interopérabilité</th>
+          <td>
+            Microsoft Word<br>
+            Open Office<br>
+            Libre Office
+          </td>
+          <td>
+            Microsoft Word<br>
+            Open Office<br>
+            Libre Office<br>
+            LateX
+          </td>
+          <td>
+            Microsoft Word<br>
+            Open Office<br>
+            Libre Office<br>
+            LateX
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
 
-    <div class="row">
-      <div class="col-md-4" style="font-size:14px;">
-        <ul class="list-group">
-          <li class="list-group-item"><img src="./images/logo_endnote.jpg" style="height:45px;"></img></li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Gratuit à la bibliothèque</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Office & LibreOffice</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Mac OSX & Windows</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Stockage illimité</li>
-        </ul>
-      </div>
-      <div class="col-md-4" style="font-size:14px;">
-        <ul class="list-group">
-          <li class="list-group-item"><img src="./images/logo_mendeley.png" style="height:45px;"></img></li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire Elsevier</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise en charge LateX</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise de notes sur PDF</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Groupe utilisateurs / Partage d'articles</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
-          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (1 Go)</li>
-        </ul>
-      </div>
-      <div class="col-md-4" style="font-size:14px;">
-        <li class="list-group-item"><img src="./images/logo_zotero.png" style="height:45px;"></img></li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel Libre</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
-        <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (100 Mo)</li>
-      </div>
-    </div>
-
-    <span style="text-align:right;font-size:14px;font-weight:bold;">.footnote[[Source](https://www.libraries.psu.edu/psul/lls/choose_citation_mgr.html)]</span>
+    .footnote[[Pour en savoir davantage](https://github.com/SteveViss/Talk_bib/raw/master/Ressources/Logiciels%20Biblio_Comparatif.pdf)]
 
     ---
     name: inverse
@@ -744,7 +786,7 @@
     > cr_search(query, rows, ...)
 
     ### Extraction des citations en BibTeX
-    > cr_cn(dois, format)
+    > cr_cn(dois, format = 'bibtex')
     ```
 
     ---
