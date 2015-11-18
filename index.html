@@ -5,13 +5,13 @@
   <meta charset="utf-8">
 
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   <style>
   @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
   @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
@@ -42,25 +42,28 @@
     bottom: 12px;
     left: 20px;
   }
-.remark-slide-content h1 { font-size: 2em; }
-.remark-slide-content h2 { font-size: 1.5em; }
-.remark-slide-content h3 { font-size: 1.25em; }
-.footnote {
-  bottom: 3em;
-}
-li p { line-height: 1.25em; }
-.red { color: #fa0000; }
-.large { font-size: 2em; }
-a, a > code {
-  color: rgb(203, 6, 0);
-  text-decoration: none;
-}
+  .remark-slide-content h1 { font-size: 2em; }
+  .remark-slide-content h2 { font-size: 1.5em; }
+  .remark-slide-content h3 { font-size: 1.25em; }
+  .footnote {
+    bottom: 3em;
+  }
+  li p { line-height: 1.25em; }
+  .red { color: #fa0000; }
+  .large { font-size: 2em; }
+  a, a > code {
+    color: rgb(203, 6, 0);
+    text-decoration: none;
+  }
   .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
   .vertical-align {
     display: flex;
     align-items: center;
-}
+  }
+  .remark-slide-number{
+    opacity: 0;
+  }
   </style>
 </head>
 <body>
@@ -68,605 +71,605 @@ a, a > code {
 
 
 
-name: inverse
-layout: true
-class: center, middle, inverse
----
-# Gérer et formater sa bibliographie
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
+    # Gérer et formater sa bibliographie
 
-<hr />
+    <hr />
 
-Nicolas Casajus, Steve Vissault et Kevin Cazelles
+    Nicolas Casajus, Steve Vissault et Kevin Cazelles
 
-<br />
+    <br />
 
-<img src="./images/bib.jpg" style="width:500px"></img>
+    <img src="./images/bib.jpg" style="width:500px"></img>
 
-<br />
+    <br />
 
-.footnote[En ligne sur [Github](https://github.com/SteveViss/Talk_bib/)]
+    .footnote[En ligne sur [Github](https://github.com/SteveViss/Talk_bib/)]
 
-???
-pas de note
+    ???
+    pas de note
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
+    ---
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
 
-## Introduction
+    ## Introduction
 
-<hr />
+    <hr />
 
-### Avant le gros code sale
+    ### Avant le gros code sale
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
----
-layout: false
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    ---
+    layout: false
 
-## Une référence bibliographique, c'est quoi?
-<hr />
-<br />
---
+    ## Une référence bibliographique, c'est quoi?
+    <hr />
+    <br />
+    --
 
-1. Une source d'information
---
+    1. Une source d'information
+    --
 
-1. Un ensemble de données relatif à cette source d'information (metadonnées)
---
+    1. Un ensemble de données relatif à cette source d'information (metadonnées)
+    --
 
-1. Un repère historique / scientifique
---
+    1. Un repère historique / scientifique
+    --
 
-1. Un appui à un argument
+    1. Un appui à un argument
 
-???
-mes notes
+    ???
+    mes notes
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
----
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    ---
 
-## Qu'en fait-on?
-<hr />
-<br />
---
+    ## Qu'en fait-on?
+    <hr />
+    <br />
+    --
 
-1. On les cherche
---
+    1. On les cherche
+    --
 
-1. On les stocke
---
+    1. On les stocke
+    --
 
-1. On s'y réfère en les citant
---
+    1. On s'y réfère en les citant
+    --
 
-1. On fait des statistiques dessus (bibliométrie)
+    1. On fait des statistiques dessus (bibliométrie)
 
-???
-les statistiques, c'est aussi par là que passe les impact factor, les H-index...
+    ???
+    les statistiques, c'est aussi par là que passe les impact factor, les H-index...
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## Qu'en fait-on?
-<hr />
-<br />
+    ## Qu'en fait-on?
+    <hr />
+    <br />
 
-![:scale 80%](./images/nbarticles.jpg)
+    ![:scale 80%](./images/nbarticles.jpg)
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## Chercher des références bibliographiques
-<hr />
-<br />
+    ## Chercher des références bibliographiques
+    <hr />
+    <br />
 
-- [Google Scolar](https://scholar.google.ca)
+    - [Google Scolar](https://scholar.google.ca)
 
-- [Web of Science](https://apps.webofknowledge.com/)
+    - [Web of Science](https://apps.webofknowledge.com/)
 
-- [Service bibliothèque](http://biblio.uqar.ca)
+    - [Service bibliothèque](http://biblio.uqar.ca)
 
-- [Les journaux](http://www.nature.com)
+    - [Les journaux](http://www.nature.com)
 
-- [Research Gate](https://www.researchgate.net/home)
+    - [Research Gate](https://www.researchgate.net/home)
 
-- et bien d'autres moteurs de recherche spécialisés
+    - et bien d'autres moteurs de recherche spécialisés
 
 
-???
-Les journaux => flux RSS => les auteurs un mail direct
+    ???
+    Les journaux => flux RSS => les auteurs un mail direct
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## Les données relatives aux références
-<hr />
-<br />
+    ## Les données relatives aux références
+    <hr />
+    <br />
 
-1. Nature de la source d'information
-1. Auteurs
-1. Date
-1. Journal/revue
-1. Adresse URL
-1. Une identification unique
+    1. Nature de la source d'information
+    1. Auteurs
+    1. Date
+    1. Journal/revue
+    1. Adresse URL
+    1. Une identification unique
 
-???
-Jusqu'à la personnelle communication
-Croiser tous ces facteurs pour avoir une source unique ou pas
+    ???
+    Jusqu'à la personnelle communication
+    Croiser tous ces facteurs pour avoir une source unique ou pas
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## Mécanismes d'identification des ressources
-<hr />
-<br />
+    ## Mécanismes d'identification des ressources
+    <hr />
+    <br />
 
-1. **ISSN** (_International Standard Serial Number_)
-2. **ISBN** (_International Standard Book Number_)
-3. **DOI** (_Digital Object Identifier_)
-4. **ArXid**
-5. **PMID** (_PubMed IDentifier_)
+    1. **ISSN** (_International Standard Serial Number_)
+    2. **ISBN** (_International Standard Book Number_)
+    3. **DOI** (_Digital Object Identifier_)
+    4. **ArXid**
+    5. **PMID** (_PubMed IDentifier_)
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## International Standard Serial Number (ISSN)
-<hr />
-<br />
+    ## International Standard Serial Number (ISSN)
+    <hr />
+    <br />
 
-- Pour les publications en série (journaux, revues, collections, etc.)
-- Normalisé depuis 1975
-- 2 x 4 chiffres
-- Dernier chiffre = [clé de vérification](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number)
---
+    - Pour les publications en série (journaux, revues, collections, etc.)
+    - Normalisé depuis 1975
+    - 2 x 4 chiffres
+    - Dernier chiffre = [clé de vérification](https://fr.wikipedia.org/wiki/International_Standard_Serial_Number)
+    --
 
-- Exemples:
+    - Exemples:
 
-        Science: ISSN 0036-8075 (print), 1095-9203 (online)
-        Ecology Letters: ISSN 1461-0248 (online)
-<!--![:scale 60%](./images/science.jpg)
-![:scale 60%](./images/ecolet.jpg)-->
+    Science: ISSN 0036-8075 (print), 1095-9203 (online)
+    Ecology Letters: ISSN 1461-0248 (online)
+    <!--![:scale 60%](./images/science.jpg)
+    ![:scale 60%](./images/ecolet.jpg)-->
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## International Standard Book Number (ISBN)
-<hr />
-<br />
+    ## International Standard Book Number (ISBN)
+    <hr />
+    <br />
 
-- Composé de 13 chiffres (depuis 2007, 10 avant cette date)
-- Normalisé depuis 1975
---
+    - Composé de 13 chiffres (depuis 2007, 10 avant cette date)
+    - Normalisé depuis 1975
+    --
 
-<br /><br />
+    <br /><br />
 
-![:scale 100%](./images/isbnTufte.jpg)
+    ![:scale 100%](./images/isbnTufte.jpg)
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## International Standard Book Number (ISBN)
-<hr />
-<br />
+    ## International Standard Book Number (ISBN)
+    <hr />
+    <br />
 
-- Écrit avec le code barre
---
+    - Écrit avec le code barre
+    --
 
-<br /><br />
+    <br /><br />
 
-![:scale 85%](./images/isbn.png)
+    ![:scale 85%](./images/isbn.png)
 
---
-<br /><br />
-- 978-1-234-56789-7
-- [ISBN Search](http://www.isbnsearch.org)
+    --
+    <br /><br />
+    - 978-1-234-56789-7
+    - [ISBN Search](http://www.isbnsearch.org)
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## Digital Object Identifier (DOI)
-<hr />
-<br />
+    ## Digital Object Identifier (DOI)
+    <hr />
+    <br />
 
-- Identifier des resources numériques:
+    - Identifier des resources numériques:
     - Articles scientifiques
     - Jeux de données ([DataCite](https://www.datacite.org/node))
     - Code ([Zenodo](https://zenodo.org/about))
 
---
+    --
 
-- Normalisé depuis 2012 (norme ISO 26324)
+    - Normalisé depuis 2012 (norme ISO 26324)
 
---
+    --
 
-- [Articles en ligne BBF (1998)](http://bbf.enssib.fr/consulter/bbf-1998-03-0049-007)
+    - [Articles en ligne BBF (1998)](http://bbf.enssib.fr/consulter/bbf-1998-03-0049-007)
 
-- [Articles INIST](http://www.inist.fr/?Attribution-de-DOI)
+    - [Articles INIST](http://www.inist.fr/?Attribution-de-DOI)
 
-- [DOI ISBN](https://www.doi.org/factsheets/ISBN-A.html)
+    - [DOI ISBN](https://www.doi.org/factsheets/ISBN-A.html)
 
-- DOI ISSN (recommandé)
+    - DOI ISSN (recommandé)
 
 
 
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
----
+    ---
 
-## Digital Object Identifier (DOI)
-<hr />
-<br />
+    ## Digital Object Identifier (DOI)
+    <hr />
+    <br />
 
-- Will a Large Complex System be Stable?
+    - Will a Large Complex System be Stable?
 
---
+    --
 
-- [crossref](http://crossref.org)
+    - [crossref](http://crossref.org)
 
---
+    --
 
-- [doi.org](http://www.doi.org)
+    - [doi.org](http://www.doi.org)
 
---
+    --
 
-- Exemples
-        10.3410/f.718255373.793490237
-        10.1111/j.1461-0248.2004.00608.x
-        10.1111/j.1461-0248.2011.01588.x
-???
-Ca veut dire que si je peux aller chercher DOI en ligne, je peux avoir accès à toutes aux metadonnées
-Kev : todo lire plus sur le pourquoi de l'existence du DOI et qui en est à l'origine
+    - Exemples
+    10.3410/f.718255373.793490237
+    10.1111/j.1461-0248.2004.00608.x
+    10.1111/j.1461-0248.2011.01588.x
+    ???
+    Ca veut dire que si je peux aller chercher DOI en ligne, je peux avoir accès à toutes aux metadonnées
+    Kev : todo lire plus sur le pourquoi de l'existence du DOI et qui en est à l'origine
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
+    ---
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
 
-## Stocker ses références
+    ## Stocker ses références
 
-<hr />
+    <hr />
 
-### Quelques outils disponibles
+    ### Quelques outils disponibles
 
----
-layout: false
+    ---
+    layout: false
 
-## Trois alternatives principales
-<hr />
+    ## Trois alternatives principales
+    <hr />
 
 
-<div class="row">
-  <div class="col-md-4" style="font-size:14px;">
-    <ul class="list-group">
-      <li class="list-group-item"><img src="./images/logo_endnote.jpg" style="height:45px;"></img></li>
-      <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire</li>
-      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Gratuit à la bibliothèque</li>
-      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Office & LibreOffice</li>
-      <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Mac OSX & Windows</li>
-      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
-      <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Stockage illimité</li>
-    </ul>
-  </div>
-  <div class="col-md-4" style="font-size:14px;">
-  <ul class="list-group">
-    <li class="list-group-item"><img src="./images/logo_mendeley.png" style="height:45px;"></img></li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire Elsevier</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise en charge LateX</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise de notes sur PDF</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Groupe utilisateurs / Partage d'articles</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (1 Go)</li>
-  </ul>
-</div>
-  <div class="col-md-4" style="font-size:14px;">
-    <li class="list-group-item"><img src="./images/logo_zotero.png" style="height:45px;"></img></li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel Libre</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
-    <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (100 Mo)</li>
-  </div>
-</div>
+    <div class="row">
+      <div class="col-md-4" style="font-size:14px;">
+        <ul class="list-group">
+          <li class="list-group-item"><img src="./images/logo_endnote.jpg" style="height:45px;"></img></li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Gratuit à la bibliothèque</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span>/<span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Office & LibreOffice</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Mac OSX & Windows</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Stockage illimité</li>
+        </ul>
+      </div>
+      <div class="col-md-4" style="font-size:14px;">
+        <ul class="list-group">
+          <li class="list-group-item"><img src="./images/logo_mendeley.png" style="height:45px;"></img></li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel propriétaire Elsevier</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise en charge LateX</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Prise de notes sur PDF</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Groupe utilisateurs / Partage d'articles</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
+          <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (1 Go)</li>
+        </ul>
+      </div>
+      <div class="col-md-4" style="font-size:14px;">
+        <li class="list-group-item"><img src="./images/logo_zotero.png" style="height:45px;"></img></li>
+        <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Logiciel Libre</li>
+        <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Gratuit</li>
+        <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Multi-plateformes</li>
+        <li class="list-group-item"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="color:rgb(14, 171, 0)"></span> Synchronisation</li>
+        <li class="list-group-item"><span class="glyphicon glyphicon-minus" aria-hidden="true" style="color:rgb(171, 0, 41)"></span> Stockage limité (100 Mo)</li>
+      </div>
+    </div>
 
-<span style="text-align:right;font-size:14px;font-weight:bold;">.footnote[[Source](https://www.libraries.psu.edu/psul/lls/choose_citation_mgr.html)]</span>
+    <span style="text-align:right;font-size:14px;font-weight:bold;">.footnote[[Source](https://www.libraries.psu.edu/psul/lls/choose_citation_mgr.html)]</span>
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
+    ---
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
 
-## Stocker ses références
+    ## Stocker ses références
 
-<hr />
+    <hr />
 
-### Illustration avec Zotero et Mendeley
+    ### Illustration avec Zotero et Mendeley
 
-???
-1. Mendeley
-  - Importer un PDF qui fonctionne avec/sans metadonnées
-  - Corriger les métadonnées
-  - Créer une librairie de PDF
-  - Connexion au cloud
-  - Création de groupes de travail
-1. Zotero
-  - Importation de fichiers/articles à partir du Web
-  - Lier le fichiers PDF aux metadonnées
-  - Connexion au cloud
+    ???
+    1. Mendeley
+    - Importer un PDF qui fonctionne avec/sans metadonnées
+    - Corriger les métadonnées
+    - Créer une librairie de PDF
+    - Connexion au cloud
+    - Création de groupes de travail
+    1. Zotero
+    - Importation de fichiers/articles à partir du Web
+    - Lier le fichiers PDF aux metadonnées
+    - Connexion au cloud
 
 
----
-layout: false
+    ---
+    layout: false
 
-## Exemple en live
-<hr />
-<br />
+    ## Exemple en live
+    <hr />
+    <br />
 
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
+    ---
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
 
-## Générer une bibliographie
+    ## Générer une bibliographie
 
-<hr />
+    <hr />
 
-### LibreOffice et le plugin Mendeley
+    ### LibreOffice et le plugin Mendeley
 
----
-layout: false
+    ---
+    layout: false
 
-## Exemple en live
-<hr />
-<br />
+    ## Exemple en live
+    <hr />
+    <br />
 
 
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
+    ---
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
 
-## Générer une bibliographie
+    ## Générer une bibliographie
 
-<hr />
+    <hr />
 
-### LaTeX, Markdown et Pandoc
+    ### LaTeX, Markdown et Pandoc
 
----
-layout: false
+    ---
+    layout: false
 
-## LaTeX, Markdown et Pandoc: quésako?
-<hr />
-<br />
+    ## LaTeX, Markdown et Pandoc: quésako?
+    <hr />
+    <br />
 
-![:scale 15%](./images/logo_bib.png)
---
+    ![:scale 15%](./images/logo_bib.png)
+    --
 
-<br /><br />
+    <br /><br />
 
 
-- Format de fichier (et logiciel)
-- Contient la description d'une référence sous forme de mot-clé
---
-<br /><br />
-        @article{arrow1961,
-           author={Arrow, Kenneth J. and Leonid Hurwicz and Hirofumi Uzawa},
-           title={Constraint qualifications in maximization problems},
-           journal={Naval Research Logistics Quarterly},
-           volume={8},
-           year=1961,
-           pages={175-191}
-        }
-<br />
---
+    - Format de fichier (et logiciel)
+    - Contient la description d'une référence sous forme de mot-clé
+    --
+    <br /><br />
+    @article{arrow1961,
+      author={Arrow, Kenneth J. and Leonid Hurwicz and Hirofumi Uzawa},
+      title={Constraint qualifications in maximization problems},
+      journal={Naval Research Logistics Quarterly},
+      volume={8},
+      year=1961,
+      pages={175-191}
+    }
+    <br />
+    --
 
-- Utilisé par LaTeX, Markdown et Pandoc
-- Export automatique depuis Mendeley
+    - Utilisé par LaTeX, Markdown et Pandoc
+    - Export automatique depuis Mendeley
 
 
----
-layout: false
+    ---
+    layout: false
 
-## LaTeX, Markdown et Pandoc: quésako?
-<hr />
-<br />
+    ## LaTeX, Markdown et Pandoc: quésako?
+    <hr />
+    <br />
 
-![:scale 15%](./images/logo_latex.png)
---
+    ![:scale 15%](./images/logo_latex.png)
+    --
 
-<br /><br />
+    <br /><br />
 
-- Langage de description de document
-- Appartient à la famille des langages à balises
-<br /><br />
-        \textit{Ce texte sera écrit en italique}
-<br />
---
+    - Langage de description de document
+    - Appartient à la famille des langages à balises
+    <br /><br />
+    \textit{Ce texte sera écrit en italique}
+    <br />
+    --
 
-- L'utilisateur ne s'intéresse qu'au contenu du document
-- Le typographe virtuel s'occupe de la mise en page
-- Le document compilé produit un PDF ou un PostScript
---
+    - L'utilisateur ne s'intéresse qu'au contenu du document
+    - Le typographe virtuel s'occupe de la mise en page
+    - Le document compilé produit un PDF ou un PostScript
+    --
 
-- Pour insérer une citation, on écrira :
-<br /><br />
-        \cite{Gravel2014}
-<br />
+    - Pour insérer une citation, on écrira :
+    <br /><br />
+    \cite{Gravel2014}
+    <br />
 
 
 
----
-layout: false
+    ---
+    layout: false
 
-## LaTeX, Markdown et Pandoc: quésako?
-<hr />
-<br />
+    ## LaTeX, Markdown et Pandoc: quésako?
+    <hr />
+    <br />
 
-![:scale 15%](./images/logo_markdown.png)
---
+    ![:scale 15%](./images/logo_markdown.png)
+    --
 
-<br /><br />
+    <br /><br />
 
-- Langage à balises **léger**
-<br /><br />
-        _Ce texte sera écrit en italique_
-<br />
---
+    - Langage à balises **léger**
+    <br /><br />
+    _Ce texte sera écrit en italique_
+    <br />
+    --
 
-- Version allégée de LaTeX
-- Le principe est le même que pour LaTeX
---
+    - Version allégée de LaTeX
+    - Le principe est le même que pour LaTeX
+    --
 
-- Pour insérer une citation, on écrira :
-<br /><br />
-        @Gravel2014
-<br />
+    - Pour insérer une citation, on écrira :
+    <br /><br />
+    @Gravel2014
+    <br />
 
 
 
----
-layout: false
+    ---
+    layout: false
 
-## LaTeX, Markdown et Pandoc: quésako?
-<hr />
-<br />
+    ## LaTeX, Markdown et Pandoc: quésako?
+    <hr />
+    <br />
 
-### Pandoc
---
+    ### Pandoc
+    --
 
-<br />
+    <br />
 
-- Convertisseur de formats de documents
-- Plusieurs dizaines de formats pris en compte
-- Markdown, LaTeX, HTML, Word, Writer, ePUB, PDF, JSON, XML, etc.
---
+    - Convertisseur de formats de documents
+    - Plusieurs dizaines de formats pris en compte
+    - Markdown, LaTeX, HTML, Word, Writer, ePUB, PDF, JSON, XML, etc.
+    --
 
-- Programme en lignes de commande
-<br /><br />
-        ### Création d'un PDF à partir d'un fichier LaTeX
-        pandoc -o output.pdf  input.tex
+    - Programme en lignes de commande
+    <br /><br />
+    ### Création d'un PDF à partir d'un fichier LaTeX
+    pandoc -o output.pdf  input.tex
 
-        ### Création d'un PDF à partir d'un fichier Markdown
-        pandoc -o output.pdf  input.md
+    ### Création d'un PDF à partir d'un fichier Markdown
+    pandoc -o output.pdf  input.md
 
-        ### Création d'un DOCX à partir d'un fichier LaTeX
-        pandoc -o output.docx input.tex
----
-layout: false
+    ### Création d'un DOCX à partir d'un fichier LaTeX
+    pandoc -o output.docx input.tex
+    ---
+    layout: false
 
-## Les fichiers de style bibliographique
-<hr />
-<br />
+    ## Les fichiers de style bibliographique
+    <hr />
+    <br />
 
-### Fichier CSL
-<br />
+    ### Fichier CSL
+    <br />
 
-- Contient le formatage des différents items d'une référence bibliographique
-- Souvent associé à une revue
-- Informations reconnues par Zotero, Mendeley et Pandoc
-- Plusieurs centaines de style disponible sur [GitHub](https://github.com/citation-style-language/styles)
+    - Contient le formatage des différents items d'une référence bibliographique
+    - Souvent associé à une revue
+    - Informations reconnues par Zotero, Mendeley et Pandoc
+    - Plusieurs centaines de style disponible sur [GitHub](https://github.com/citation-style-language/styles)
 
---
+    --
 
-### Alternatives
+    ### Alternatives
 
-- Fichier .ens (EndNote)
-- Fichier .bst (LaTeX)
+    - Fichier .ens (EndNote)
+    - Fichier .bst (LaTeX)
 
----
-layout: false
+    ---
+    layout: false
 
-## Exemple en live
-<hr />
-<br />
+    ## Exemple en live
+    <hr />
+    <br />
 
 
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
+    ---
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
 
-## Extras
+    ## Extras
 
-<hr />
+    <hr />
 
-### Gérer ses références avec R
+    ### Gérer ses références avec R
 
----
-layout: false
+    ---
+    layout: false
 
-## R et le package rcrossref
-<hr />
-<br />
+    ## R et le package rcrossref
+    <hr />
+    <br />
 
-![:scale 15%](./images/logo_r.png)
---
+    ![:scale 15%](./images/logo_r.png)
+    --
 
-<br /><br />
+    <br /><br />
 
-- R sert à faire des statistiques et des graphiques... et bien d'autres choses
-- Connexion à l'API de CrossRef
-- Deux fonctions principales :
+    - R sert à faire des statistiques et des graphiques... et bien d'autres choses
+    - Connexion à l'API de CrossRef
+    - Deux fonctions principales :
 
-        > cr_search(query, rows, ...)
-        > cr_cn(dois, format)
+    > cr_search(query, rows, ...)
+    > cr_cn(dois, format)
 
 
 
----
-name: inverse
-layout: true
-class: center, middle, inverse
----
+    ---
+    name: inverse
+    layout: true
+    class: center, middle, inverse
+    ---
 
-## Fin
+    ## Fin
 
-<hr />
+    <hr />
 
-### Place à la discussion
+    ### Place à la discussion
 
 
   </textarea>
