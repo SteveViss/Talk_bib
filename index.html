@@ -555,14 +555,16 @@
     - Contient la description d'une référence sous forme de mot-clé
     --
     <br /><br />
+    ```
     @article{arrow1961,
-      author={Arrow, Kenneth J. and Leonid Hurwicz and Hirofumi Uzawa},
-      title={Constraint qualifications in maximization problems},
+        author={Arrow, Kenneth J. and Leonid Hurwicz and Hirofumi Uzawa},
+       title={Constraint qualifications in maximization problems},
       journal={Naval Research Logistics Quarterly},
       volume={8},
       year=1961,
       pages={175-191}
     }
+    ```
     <br />
     --
 
@@ -585,7 +587,9 @@
     - Langage de description de document
     - Appartient à la famille des langages à balises
     <br /><br />
+    ```
     \textit{Ce texte sera écrit en italique}
+    ```
     <br />
     --
 
@@ -596,7 +600,9 @@
 
     - Pour insérer une citation, on écrira :
     <br /><br />
+    ```
     \cite{Gravel2014}
+    ```
     <br />
 
 
@@ -615,7 +621,9 @@
 
     - Langage à balises **léger**
     <br /><br />
+    ```
     _Ce texte sera écrit en italique_
+    ```
     <br />
     --
 
@@ -625,7 +633,9 @@
 
     - Pour insérer une citation, on écrira :
     <br /><br />
+    ```
     @Gravel2014
+    ```
     <br />
 
 
@@ -649,6 +659,8 @@
 
     - Programme en lignes de commande
     <br /><br />
+
+    ```
     ### Création d'un PDF à partir d'un fichier LaTeX
     pandoc -o output.pdf  input.tex
 
@@ -657,6 +669,8 @@
 
     ### Création d'un DOCX à partir d'un fichier LaTeX
     pandoc -o output.docx input.tex
+    ```
+
     ---
     layout: false
 
@@ -716,8 +730,61 @@
     - Connexion à l'API de CrossRef
     - Deux fonctions principales :
 
+    <br />
+
+    ```
+    ### Recherche d'articles par mot-clé
     > cr_search(query, rows, ...)
+
+    ### Extraction des citations en BibTeX
     > cr_cn(dois, format)
+    ```
+
+    ---
+    layout: false
+
+    ## Exemple en live
+    <hr />
+    <br />
+    --
+
+    - Lignes de code R :
+
+    <br />
+
+            # Installation du package
+            > install.packages('rcrossref')
+
+            # Choix du répertoire de travail
+            > setwd('~/Desktop/Talk_bib/exemple-r')
+
+            # Chargement des fonctions requises
+            > source('getCrossRef.R')
+            > source('initiales.R')
+
+            # Requête sur CrossRef
+            > getCrossRef(author = 'Cazelles, Kévin', year = NULL)
+    <br />
+
+
+
+    ---
+    layout: false
+
+    ## Exemple en live
+    <hr />
+    <br />
+
+    - Création d'un PDF avec les références (sans citation) dans le terminal
+
+    <br />
+
+            $ pandoc -o exemple2.pdf exemple2.tex \
+                     --bibliography=ref-cazelles.bib \
+                     --csl=nature.csl
+
+            $ open exemple2.pdf
+    <br />
 
 
 
