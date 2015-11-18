@@ -1,8 +1,10 @@
-pandoc -o md-citations.pdf md-citations.tex --bibliography=md-citations.bib --csl ecology-letters.csl
-pandoc -o md-citations.pdf md-citations.md --bibliography=md-citations.bib --csl gcb.csl
+# Exemple 1
+
+pandoc -o exemple.pdf exemple.tex --bibliography=citations.bib --csl=ecology-letters.csl
+
+pandoc -o exemple.pdf exemple.md --bibliography=citations.bib --csl=nature.csl
 
 
-pdflatex md-citations
-bibtex md-citations
-pdflatex md-citations
-pdflatex md-citations
+# Exemple 2
+
+pandoc -o exemple2.pdf exemple2.tex --bibliography=ref-cazelles-2.bib --csl=nature.csl
