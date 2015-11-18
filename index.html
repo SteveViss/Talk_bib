@@ -480,6 +480,38 @@ layout: false
 <hr />
 <br />
 
+![:scale 15%](./images/logo_bib.png)
+--
+
+<br /><br />
+
+
+- Format de fichier (et logiciel)
+- Contient la description d'une référence sous forme de mot-clé
+--
+<br /><br />
+        @article{arrow1961,
+           author={Arrow, Kenneth J. and Leonid Hurwicz and Hirofumi Uzawa},
+           title={Constraint qualifications in maximization problems},
+           journal={Naval Research Logistics Quarterly},
+           volume={8},
+           year=1961,
+           pages={175-191}
+        }
+<br />
+--
+
+- Utilisé par LaTeX, Markdown et Pandoc
+- Export automatique depuis Mendeley
+
+
+---
+layout: false
+
+## LaTeX, Markdown et Pandoc: quésako?
+<hr />
+<br />
+
 ![:scale 15%](./images/logo_latex.png)
 --
 
@@ -602,6 +634,40 @@ class: center, middle, inverse
 <hr />
 
 ### Gérer ses références avec R
+
+---
+layout: false
+
+## R et le package rcrossref
+<hr />
+<br />
+
+![:scale 15%](./images/logo_r.png)
+--
+
+<br /><br />
+
+- R sert à faire des statistiques et des graphiques... et bien d'autres choses
+- Connexion à l'API de CrossRef
+- Deux fonctions principales :
+
+        > cr_search(query, rows, ...)
+        > cr_cn(dois, format)
+
+
+
+---
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+
+## Fin
+
+<hr />
+
+### Place à la discussion
+
 
   </textarea>
   <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
