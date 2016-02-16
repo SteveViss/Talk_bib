@@ -10,6 +10,10 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
 
+  <!-- Add font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   <style>
@@ -87,7 +91,7 @@
 
     <br />
 
-    .footnote[En ligne sur [Github](https://github.com/SteveViss/Talk_bib/)]
+    .footnote[En ligne sur [<i class="fa fa-github"></i>](https://github.com/SteveViss/Talk_bib/)]
 
     .footnote[Fait avec <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span> sur [Remark](http://remarkjs.com/#1)]
 
@@ -241,7 +245,7 @@
       > Journal, éditions, collection, URL, etc.
     --
 
-    6. Une identification unique
+    6. **Une identification unique**
       > Au-delà du recoupement d'informations
 
     ???
@@ -259,8 +263,11 @@
     <br />
 
     1. **ISSN** (_International Standard Serial Number_)
+
     2. **ISBN** (_International Standard Book Number_)
+
     3. **DOI** (_Digital Object Identifier_)
+
     --
 
     4. **ArXiv ID**
@@ -270,9 +277,6 @@
     5. **PMID** (_PubMed IDentifier_)
       > Tout ce qui est [biomedical](http://www.ncbi.nlm.nih.gov/pubmed)
     --
-
-    6. **ORCID** (_Open Researcher and Contributor ID_)
-      > [Identifiant unique pour les contributeurs](http://orcid.org/organizations/institutions), nous!
 
 
 
@@ -407,11 +411,9 @@
 
       >[doi.org](http://www.doi.org)
 
+      > 10.1111/j.1461-0248.2011.01732.x
+
       > 10.3410/f.718255373.793490237
-
-      > 10.1111/j.1461-0248.2004.00608.x
-
-      > 10.1111/j.1461-0248.2011.01588.x
 
 
     - Ne plus saisir les metadonnées à la main
@@ -420,6 +422,74 @@
     ???
     Ca veut dire que si je peux aller chercher DOI en ligne, je peux avoir accès à toutes aux metadonnées
     Kev : todo lire plus sur le pourquoi de l'existence du DOI et qui en est à l'origine
+
+
+    ---
+    ## Mécanismes d'identification des contributeurs
+    <hr />
+
+    <br>
+
+    ### Research Gate
+    <br>
+
+    --
+
+    ### *Open Researcher and Contributor ID* (ORCID)
+
+    --
+      <br />
+     1- Idenditfier les chercheurs par un numéro unique
+
+      > 0000-0001-6619-9874
+
+      > [https://orcid.org/0000-0001-6619-9874](https://orcid.org/0000-0001-6619-9874)
+
+    --
+
+      <br />
+      2- S'indentifier rapidement quand on soumet un manuscript
+
+      ![:scale 75%](./images/orcidpaper.jpg)
+
+    --
+
+      <br />
+      3- Faire le lien entre son identifiant et celui de ses publications
+
+
+    --
+
+    ---
+
+    ## Pourquoi utiliser ORCID ?
+    <hr />
+
+    <br />
+
+      1- Identifiant unique qui distingue des chercheurs qui ont le même nom
+
+      2- De plus en plus de plateformes (dont celles pour soumettre des manuscripts) utilisent ORCID
+
+      3- Vos données personnelles sont protégées (c'est moins le cas avec Research Gate)
+
+    --
+
+      4- Accès à une interface de programmation. Avec [ORCID Feed](http://feed.labs.orcid-eu.org) et un un terminal muni de [curl](https://curl.haxx.se), on peut importer ses publicatione en différents formats :
+
+      ```
+        curl http://feed.labs.orcid-eu.org/0000-0001-6619-9874.bib > ./publi.bib
+
+        curl http://feed.labs.orcid-eu.org/0000-0001-6619-9874.yml > ./publi.yml
+
+        curl http://feed.labs.orcid-eu.org/0000-0001-6619-9874.json > ./publi.json
+      ```
+
+    --
+
+      5- Plus d'arguments [ici](http://orcid.org/content/requiring-orcid-publication-workflows-open-letter)
+
+
 
     ---
     name: inverse
@@ -708,14 +778,14 @@
     <br /><br />
 
     ```
-    ### Création d'un PDF à partir d'un fichier LaTeX
-    pandoc -o output.pdf  input.tex
+    ###Création d'un PDF à partir d'un fichier LaTeX
+    panoc -o output.pdf  input.tex
 
-    ### Création d'un PDF à partir d'un fichier Markdown
-    pandoc -o output.pdf  input.md
+    ###Création d'un PDF à partir d'un fichier Markdown
+    panoc -o output.pdf  input.md
 
-    ### Création d'un DOCX à partir d'un fichier LaTeX
-    pandoc -o output.docx input.tex
+    ###Création d'un DOCX à partir d'un fichier LaTeX
+    panoc -o output.docx input.tex
     ```
 
     ---
@@ -731,7 +801,7 @@
     - Contient le formatage des différents items d'une référence bibliographique
     - Souvent associé à une revue
     - Informations reconnues par Zotero, Mendeley et Pandoc
-    - Plusieurs centaines de style disponible sur [GitHub](https://github.com/citation-style-language/styles)
+    - Plusieurs centaines de style disponible sur [<i class="fa fa-github"></i>](https://github.com/citation-style-language/styles)
 
     --
 
@@ -766,18 +836,38 @@
     ---
     layout: false
 
-    ## R et le package rcrossref
+    ## Les packages pour travailler avec des références bibliographiques
     <hr />
     <br />
 
     ![:scale 15%](./images/logo_r.png)
-    --
 
-    <br /><br />
+    <br />
 
     - R sert à faire des statistiques et des graphiques... et bien d'autres choses
+
+    <br />
+
+    - Plusieurs packages permettent de manipuler de la bibliographie dont
+
+      1- **rcrossref** [CRAN](https://cran.r-project.org/web/packages/rcrossref/rcrossref.pdf) [<i class="fa fa-github"></i>](https://github.com/ropensci/rcrossref)
+
+      2- **rorcid** [CRAN](https://cran.r-project.org/web/packages/rorcid/rorcid.pdf) [<i class="fa fa-github"></i>](https://github.com/ropensci/rorcid)
+
+      3- **RefManageR** [CRAN](https://cran.r-project.org/web/packages/RefManageR/index.html)
+
+
+    ---
+    layout: false
+
+    ## rcrossref
+    <hr />
+
+    <br />
+
     - Connexion à l'API de CrossRef
-    - Deux fonctions principales :
+
+    - Deux fonctions à retenir:
 
     <br />
 
@@ -792,32 +882,42 @@
     ---
     layout: false
 
-    ## Exemple en live
+    ## rorcid
     <hr />
-    <br />
-    --
-
-    - Lignes de code R :
 
     <br />
 
-            # Installation du package
-            > install.packages('rcrossref')
+    - Connexion à l'API de ORCID
 
-            # Choix du répertoire de travail
-            > setwd('~/Desktop/Talk_bib/exemple-r')
+    - Deux fonction à retenir :
 
-            # Chargement des fonctions requises
-            > source('getCrossRef.R')
-            > source('initiales.R')
+    ```
+    ### Aller chercher les données relatives à un identifiant
+    > as.orcid(x)
+    ### où x est l'identifiant
+    > summary(as.orcid(x))
 
-            # Requête sur CrossRef
-            > getCrossRef(author = 'Cazelles, Kévin', year = NULL)
-    <br />
-
+    ### Extraction des publication
+    > works(as.orcid(x))
+    ```
 
 
     ---
+    layout: false
+
+    ## Application
+    <hr />
+
+    <br />
+    Quelques lignes de code qui permettent de manipuler des données ORCID avec R.
+
+    <br />
+    - Se rendre à l'exemple : [<i class="fa fa-github"></i>](https://gist.github.com/KevCaz/599c5a16cf26f65dcd21)
+
+    - Télécharger l'exemple : [<i class="fa fa-download"></i>](https://gist.github.com/KevCaz/599c5a16cf26f65dcd21/archive/32958932a02884cc4f524efbfd06a7c91c31b171.zip)
+
+
+    <!-- ---
     layout: false
 
     ## Exemple en live
@@ -827,13 +927,11 @@
     - Création d'un PDF avec les références (sans citation) dans le terminal
 
     <br />
-
-            $ pandoc -o exemple2.pdf exemple2.tex \
-                     --bibliography=ref-cazelles.bib \
-                     --csl=nature.csl
-
-            $ open exemple2.pdf
-    <br />
+      $ pandoc -o exemple2.pdf exemple2.tex \
+               --bibliography=ref-cazelles.bib \
+                 --csl=nature.csl
+      $ open exemple2.pdf
+    <br /> -->
 
 
 
