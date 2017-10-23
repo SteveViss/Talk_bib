@@ -1,0 +1,37 @@
+---
+title: 'How to use `taxize` [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
+date: "`r paste0('Last update: ', format(Sys.time(), '%d %B %Y'))`"
+author: 'Steve Vissault and Kevin Cazelles'
+# lang: french
+output:
+    ioslides_presentation:
+        incremental: true
+        widescreen: true
+        includes:
+          in_header: kcheader.html  
+        #logo: ./img/logo.png
+---
+
+
+```{r dsetup, results = "hide", echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  fig.align='center',
+  tidy=FALSE,
+  comment="R>> ",
+  size = 'small'
+)
+```
+
+<!-- Je ne sais pas si on doit trop insister dessus, c'est pas vraiment un
+outil de meta-analyses, dans notre domaine c'est vrai que ça peut le devenir
+genre pour voir si certaines activités humaines impactent différement certaines
+branches du vivant -->
+
+# Why use `taxize`?
+
+
+# How to use `taxize`?
+
+## Find a `tsn`
+
+## Retrieve a classification
