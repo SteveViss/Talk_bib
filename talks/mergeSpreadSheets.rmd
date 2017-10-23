@@ -55,6 +55,14 @@ for (i in 1:length(fcsv)){
 mydat <- do.call('rbind', lscsv)
 ```
 
+## Multiple spreadsheets
+
+
+```bash
+ssconvert -S fileIn.xlsx foldercsv/fileOut_%s.csv
+```
+
+
 
 # Google spreadsheet
 
