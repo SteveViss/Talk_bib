@@ -1,0 +1,79 @@
+---
+title: 'Handling DOI [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
+date: "`r paste0('Last update: ', format(Sys.time(), '%d %B %Y'))`"
+author: 'Steve Vissault and Kevin Cazelles'
+# lang: french
+output:
+    ioslides_presentation:
+        incremental: true
+        widescreen: true
+        includes:
+          in_header: kcheader.html  
+        #logo: ./img/logo.png
+---
+
+
+
+```{r dsetup, results = "hide", echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  fig.align='center',
+  tidy=FALSE,
+  comment="R>> ",
+  size = 'small'
+)
+```
+
+
+
+
+# What are DOI? (we may cover it before)
+
+## DOI
+
+- definition
+- how to find them
+
+
+# Retrieve data from DOI
+
+## How does it work?
+
+- [crossref](https://www.crossref.org/)
+- [rcrossref](https://github.com/ropensci/rcrossref)
+
+
+## Retrieve data
+
+Install the package
+
+```r
+install.packages('rcrossref')
+```
+
+```{r ex1}
+library('rcrossref')
+vecDOI <- cr_r(10)
+vecDOI[1]
+```
+
+## Retrieve data
+
+
+```{r ex2}
+bib1 = cr_cn(vecDOI[1], format='bibentry')
+str(bib1)
+```
+
+## Retrieve data
+
+```{r ex3}
+lsf <- lapply(vecDOI, cr_cn, format="bibentry")
+lsaut <- lapply(lsf, function(x) x$author)
+lsjnl <- lapply(lsf, function(x) x$journal)
+```
+
+## Retrieve data
+
+```{r ex4}
+unlist(lsjnl)
+```

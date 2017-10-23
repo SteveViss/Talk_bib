@@ -1,5 +1,5 @@
 ---
-title: 'Dealing with spreadsheets [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/KevCaz/mapsWithR)'
+title: 'Dealing with spreadsheets [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
 date: "`r paste0('Last update: ', format(Sys.time(), '%d %B %Y'))`"
 author: 'Steve Vissault and Kevin Cazelles'
 # lang: french
