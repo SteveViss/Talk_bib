@@ -1,5 +1,5 @@
 ---
-title: 'How to use `taxize` [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
+title: 'Why and how to use `taxize`? [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
 date: "`r paste0('Last update: ', format(Sys.time(), '%d %B %Y'))`"
 author: 'Steve Vissault and Kevin Cazelles'
 # lang: french
@@ -22,10 +22,12 @@ knitr::opts_chunk$set(
 )
 ```
 
-<!-- Je ne sais pas si on doit trop insister dessus, c'est pas vraiment un
-outil de meta-analyses, dans notre domaine c'est vrai que ça peut le devenir
-genre pour voir si certaines activités humaines impactent différement certaines
-branches du vivant -->
+<!-- Update species names in database
+Obtain scientific name given a common name
+Correct misspellings
+Retrieve higher taxonomic names
+ID taxa downstream of taxon of interest
+And more! -->
 
 # Why use `taxize`?
 
