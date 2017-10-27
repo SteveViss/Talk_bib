@@ -1,11 +1,11 @@
 ---
-title: 'Why and how to use `taxize`? [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
-date: "`r paste0('Last update: ', format(Sys.time(), '%d %B %Y'))`"
+title: 'Why and how to use `taxize`? <br> [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
+date: "`r paste0(format(Sys.time(), '%d %B %Y'))`"
 author: 'Steve Vissault and Kevin Cazelles'
 # lang: french
 output:
     ioslides_presentation:
-        incremental: true
+        incremental: false
         widescreen: true
         includes:
           in_header: kcheader.html  
@@ -22,18 +22,106 @@ knitr::opts_chunk$set(
 )
 ```
 
-<!-- Update species names in database
-Obtain scientific name given a common name
-Correct misspellings
-Retrieve higher taxonomic names
-ID taxa downstream of taxon of interest
-And more! -->
+## What is `taxize`?
 
-# Why use `taxize`?
+> taxize allows users to search over many taxonomic data sources for species names (scientific and common) and download up and downstream taxonomic hierarchical information
+
+In brief, `taxize` is a R package developed to help you managing taxonomic information.
+
+### Install taxize with
+
+```r
+install.packages("taxize") #or
+devtools::install_github("ropensci/taxize")
+```
+
+Tutorial available at [ROpenSci website](https://ropensci.org/tutorials/taxize_tutorial/)
+
+## Why use `taxize` in a meta-analyses context?
+
+### If your meta-analyses involve working on organisms with several collaborators:
+
+Two situations could easily happen...
+
+**Situation 1 -** Mispelled by collaborators
+
+```r
+plants <- c("Poa annua", "Poa anua", " Poa annua")
+```
+
+**Situation 2 -** Inconsistent taxonomy within papers: species taxonomy changed over the time...
+
+_Monterey cypress_ has been *Callitropsis macrocarpa*, *Cupressus macrocarpa*, *Neocupressus macrocarpa*, then back to *Callitropsis macrocarpa*...
+
+## Why to use `taxize`?
+
+Taking advantage of the existant taxonomic backbones...
+
+- Encylopedia of Life
+- Taxonomic Name Resolution Service
+- Integrated Taxonomic Information Service
+- Global Names Resolver
+- IUCN Red List                   
+- CANADENSYS Vascan name search API
+- etc.
+
+**Total:** 21 sources implemented
 
 
-# How to use `taxize`?
+## Study case 1: Mispelled names
 
-## Find a `tsn`
+For this case, we use `Global Names Resolver` service:
 
-## Retrieve a classification
+```{r eval=TRUE, echo=TRUE, }
+temp <- taxize::gnr_resolve(names = c("Poa annua", "Poa anua", "  Poa annua"),
+                            data_source_ids=c(3))
+head(temp)
+```
+
+Fuzzy matches could be done with several taxonomy providers:
+
+```{r eval=FALSE, echo=TRUE }
+taxize::gnr_datasources()
+```
+
+## Study case 2: Inconsistent taxonomic informations
+
+If we go back, to our _Monterey cypress_ example with a fictive scenario:
+
+- Find one publication with *Cupressus macrocarpa* in **1987**
+- And another with *Callitropsis macrocarpa* in **1990**
+
+I want to harmonize them with the latest species name for _Monterey cypress_.
+
+## Study case 2: Inconsistent taxonomic informations
+
+I'll use [ITIS](https://www.itis.gov/) to perform this task.
+
+- **First step:** Get the taxonomic serial number (_TSN_) for each species names (*Cupressus macrocarpa* and *Callitropsis macrocarpa*)
+- **Second step:** Check if this these _TSN_ are valid and if not get the valid one with the accepted names.
+
+
+## Study case 2: Inconsistent taxonomic informations
+
+- **First step:** Get the taxonomic serial number (_TSN_) for each species names (*Cupressus macrocarpa* and *Callitropsis macrocarpa*)
+
+```{r eval=TRUE, echo=TRUE }
+mysps <- c("Callitropsis macrocarpa", "Cupressus macrocarpa")
+(tsn <- get_tsn(mysps, accepted = FALSE, verbose=FALSE))
+```
+
+## Study case 2: Inconsistent taxonomic informations
+
+- **Second step:** Check if this these _TSN_ are valid and if not get the valid one with the accepted names.
+
+```{r eval=TRUE, echo=TRUE }
+library(taxize)
+(accept_tsn <- lapply(tsn, itis_acceptname))
+```
+
+## Documentation
+
+### If you want to learn more about the features of this package:
+
+1. [ROpenSci tutorial](https://ropensci.org/tutorials/taxize_tutorial/)
+2. [Package Documentation](https://cran.r-project.org/web/packages/taxize/taxize.pdf)
