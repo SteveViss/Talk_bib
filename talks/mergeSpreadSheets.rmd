@@ -1,11 +1,11 @@
 ---
-title: 'Dealing with spreadsheets [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
-date: "`r paste0('Last update: ', format(Sys.time(), '%d %B %Y'))`"
+title: 'Merging spreadsheets [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
+date: "`r paste0(format(Sys.time(), '%d %B %Y'))`"
 author: 'Steve Vissault and Kevin Cazelles'
 # lang: french
 output:
     ioslides_presentation:
-        incremental: true
+        incremental: false
         widescreen: true
         includes:
           in_header: kcheader.html  
@@ -22,9 +22,9 @@ knitr::opts_chunk$set(
 )
 ```
 
+## Collecting informations together 
 
 
-# Excel/LibreOffice spreadsheet
 
 ## One spreadsheet
 
@@ -48,7 +48,9 @@ read.xlsx('file.csv')
 
 ```r
 fcsv <- list.files('path/to/folder', pattern='^F.*csv$', full.names=TRUE)
+
 lscsv <- list()
+
 for (i in 1:length(fcsv)){
   lscsv <- read.csv(fcsv[[i]])
 }
@@ -61,8 +63,6 @@ mydat <- do.call('rbind', lscsv)
 ```bash
 ssconvert -S fileIn.xlsx foldercsv/fileOut_%s.csv
 ```
-
-
 
 # Google spreadsheet
 

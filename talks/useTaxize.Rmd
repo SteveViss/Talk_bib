@@ -1,5 +1,5 @@
 ---
-title: 'Why and how to use `taxize`? <br> [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/SteveViss/Talk_bib)'
+title: 'Why and how to use `taxize`? <br> [<i class="fa fa-github" aria-hidden="true"></i>](https://github.com/ropensci/taxize)'
 date: "`r paste0(format(Sys.time(), '%d %B %Y'))`"
 author: 'Steve Vissault and Kevin Cazelles'
 # lang: french
@@ -51,7 +51,7 @@ plants <- c("Poa annua", "Poa anua", " Poa annua")
 
 **Situation 2 -** Inconsistent taxonomy within papers: species taxonomy changed over the time...
 
-_Monterey cypress_ has been *Callitropsis macrocarpa*, *Cupressus macrocarpa*, *Neocupressus macrocarpa*, then back to *Callitropsis macrocarpa*...
+_Monterey cypress_ has been *Callitropsis macrocarpa*, *Cupressus macrocarpa*, *Cupressus hartwegii*, *Neocupressus macrocarpa*, then back to *Callitropsis macrocarpa*...
 
 ## Why to use `taxize`?
 
@@ -91,23 +91,23 @@ If we go back, to our _Monterey cypress_ example with a fictive scenario:
 - Find one publication with *Cupressus macrocarpa* in **1987**
 - And another with *Callitropsis macrocarpa* in **1990**
 
-I want to harmonize them with the latest species name for _Monterey cypress_.
+I want to harmonize them with the newest species name for _Monterey cypress_.
 
 ## Study case 2: Inconsistent taxonomic informations
 
 I'll use [ITIS](https://www.itis.gov/) to perform this task.
 
-- **First step:** Get the taxonomic serial number (_TSN_) for each species names (*Cupressus macrocarpa* and *Callitropsis macrocarpa*)
+- **First step:** Get the taxonomic serial number (_TSN_) for each species name.
 - **Second step:** Check if this these _TSN_ are valid and if not get the valid one with the accepted names.
 
 
 ## Study case 2: Inconsistent taxonomic informations
 
-- **First step:** Get the taxonomic serial number (_TSN_) for each species names (*Cupressus macrocarpa* and *Callitropsis macrocarpa*)
+- **First step:** Get the taxonomic serial number (_TSN_) for each species names.
 
 ```{r eval=TRUE, echo=TRUE }
 mysps <- c("Callitropsis macrocarpa", "Cupressus macrocarpa")
-(tsn <- get_tsn(mysps, accepted = FALSE, verbose=FALSE))
+(tsn <- taxize::get_tsn(mysps, accepted = FALSE, verbose=FALSE))
 ```
 
 ## Study case 2: Inconsistent taxonomic informations
@@ -119,9 +119,36 @@ library(taxize)
 (accept_tsn <- lapply(tsn, itis_acceptname))
 ```
 
+## Common name
+
+### Retrieve the english common name from valid scientific name
+
+```{r eval=TRUE, echo=TRUE }
+sci2comm('Cupressus macrocarpa', db = 'itis')
+```
+
+## Classification
+
+### Retrieve higher taxonomic informations
+
+```{r eval=TRUE, echo=TRUE }
+classification(822598, db = 'itis')
+```
+
+## Limitations
+
+1. Some species might be absent from databases.
+2. Some taxonomic groups are under-represented (e.g. nonvascular plants, some insects family etc.)
+
 ## Documentation
 
 ### If you want to learn more about the features of this package:
 
 1. [ROpenSci tutorial](https://ropensci.org/tutorials/taxize_tutorial/)
 2. [Package Documentation](https://cran.r-project.org/web/packages/taxize/taxize.pdf)
+
+### Have a look at the ROpenSci initiative:
+
+```{r, out.width = "100%", echo=FALSE}
+knitr::include_graphics("img/ropensci.png")
+```
