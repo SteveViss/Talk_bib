@@ -1,6 +1,0 @@
-- Exercices pour les trois parties
-  - Pratique la fusion des fichiers xls#csv
-  - Creer un google spreadsheets et essayer de le charger dans R sans passer par le module de sauvegarde
-  - Liste de DOI retirer tous les auteurs, Annexes qui affichent la biblio, pandoc bibtex via YALM and JSON. DOI - pourquoi se casser le cul a aller chercher tous les refs alors que le DOI le fait pour toi
-  - Nettoyer la taxonomy
-  - Mendeley - Essayer d'importer des PDFs dans mendeley, exporter la bib en CSV
