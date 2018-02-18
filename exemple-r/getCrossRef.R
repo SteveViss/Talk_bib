@@ -32,7 +32,7 @@ getCrossRef <- function(author, year = NULL, bibtex = TRUE, rows = 500){
 
     x <- x[grep(regexp, x[ , 'fullCitation']), ]
 
-    x <- gsub("http://dx.doi.org/", "", x$doi)
+    x <- gsub("https://doi.org/", "", x$doi)
 
     cat(file = paste('./ref-', tolower(name[1]),'.bib', sep = ''))
     for (i in 1 : length(x)){
